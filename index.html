@@ -19,14 +19,44 @@
             }
         }
     </script>
+    <style>
+        [lang="zh"] { display: none; }
+        .language-zh [lang="en"] { display: none; }
+        .language-zh [lang="zh"] { display: block; }
+    </style>
 </head>
 <body class="bg-apple-gray min-h-screen">
     <div class="container mx-auto px-4 py-8">
+        <!-- Language Switcher -->
+        <div class="text-right mb-4">
+            <button onclick="toggleLanguage()" class="bg-apple-blue text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                <span lang="en">Switch to Chinese</span>
+                <span lang="zh">切换到英文</span>
+            </button>
+        </div>
+
         <!-- Header Section -->
         <header class="text-center mb-8">
             <h1 class="text-4xl md:text-5xl font-bold text-apple-blue mb-4">Dakongyi5</h1>
-            <p class="text-lg md:text-xl text-gray-600">Experience the thrilling adventure of Rise Up - Play now!</p>
+            <p class="text-lg md:text-xl text-gray-600">
+                <span lang="en">Experience the thrilling adventure of Rise Up - Play now!</span>
+                <span lang="zh">体验刺激的Rise Up冒险 - 立即开始游戏！</span>
+            </p>
         </header>
+
+        <!-- Game Introduction Section -->
+        <section class="mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-apple-blue mb-4">
+                    <span lang="en">Game Introduction</span>
+                    <span lang="zh">游戏介绍</span>
+                </h2>
+                <p class="text-gray-600">
+                    <span lang="en">Rise Up is a highly challenging casual game where you must protect the balloon as it rises, avoiding various obstacles. Test your reflexes and skills!</span>
+                    <span lang="zh">《Rise Up》是一款极具挑战性的休闲游戏，玩家需要保护气球不断上升，躲避各种障碍物，考验你的反应和操作能力。</span>
+                </p>
+            </div>
+        </section>
 
         <!-- Game Section -->
         <section class="mb-8">
@@ -44,27 +74,55 @@
         <!-- Game Information -->
         <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-white rounded-xl shadow-lg p-6">
-                <h2 class="text-2xl font-bold text-apple-blue mb-4">Game Features</h2>
+                <h2 class="text-2xl font-bold text-apple-blue mb-4">
+                    <span lang="en">Game Features</span>
+                    <span lang="zh">游戏特色</span>
+                </h2>
                 <ul class="space-y-2 text-gray-600">
-                    <li>• Exciting gameplay mechanics</li>
-                    <li>• Beautiful graphics and animations</li>
-                    <li>• Multiple levels to complete</li>
-                    <li>• Challenging obstacles</li>
+                    <li>
+                        <span lang="en">• Exciting gameplay mechanics</span>
+                        <span lang="zh">• 刺激的游戏机制</span>
+                    </li>
+                    <li>
+                        <span lang="en">• Beautiful graphics and animations</span>
+                        <span lang="zh">• 精美的图形和动画</span>
+                    </li>
+                    <li>
+                        <span lang="en">• Multiple levels to complete</span>
+                        <span lang="zh">• 多个关卡等你挑战</span>
+                    </li>
+                    <li>
+                        <span lang="en">• Challenging obstacles</span>
+                        <span lang="zh">• 富有挑战性的障碍</span>
+                    </li>
                 </ul>
             </div>
 
             <div class="bg-white rounded-xl shadow-lg p-6">
-                <h2 class="text-2xl font-bold text-apple-blue mb-4">How to Play</h2>
+                <h2 class="text-2xl font-bold text-apple-blue mb-4">
+                    <span lang="en">How to Play</span>
+                    <span lang="zh">游戏玩法</span>
+                </h2>
                 <p class="text-gray-600">
-                    Control your character to overcome obstacles and reach new heights. Use your skills to navigate through challenging levels and achieve the highest score possible.
+                    <span lang="en">Control your character to overcome obstacles and reach new heights. Use your skills to navigate through challenging levels and achieve the highest score possible.</span>
+                    <span lang="zh">控制你的角色克服障碍并达到新的高度。运用你的技巧通过具有挑战性的关卡，获得最高分数。</span>
                 </p>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="mt-12 text-center text-gray-500">
-            <p>&copy; 2024 Dakongyi5. All rights reserved.</p>
+            <p>
+                <span lang="en">&copy; 2024 Dakongyi5. All rights reserved.</span>
+                <span lang="zh">&copy; 2024 Dakongyi5. 保留所有权利。</span>
+            </p>
         </footer>
     </div>
+
+    <script>
+        function toggleLanguage() {
+            document.body.classList.toggle('language-zh');
+        }
+    </script>
 </body>
 </html> 
