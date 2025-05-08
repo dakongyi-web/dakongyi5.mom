@@ -25,75 +25,74 @@
         .language-zh [lang="zh"] { display: block; }
         
         .chinese-flag {
-            width: 450px;
-            height: 300px;
-            background-color: #DE2910;
+            width: 360px;
+            height: 240px;
+            background-color: #EE1C25;
             position: relative;
             margin: 0 auto 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
         .star {
             position: absolute;
             width: 0;
             height: 0;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 30px solid #FFDE00;
-            transform-origin: 50% 100%;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid #FFFF00;
+            transform: rotate(35deg);
         }
         
         .star:before {
             content: '';
             position: absolute;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 30px solid #FFDE00;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid #FFFF00;
             transform: rotate(-70deg);
-            left: -15px;
+            left: -25px;
             top: -3px;
-            transform-origin: 50% 100%;
         }
         
         .star:after {
             content: '';
             position: absolute;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 30px solid #FFDE00;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid #FFFF00;
             transform: rotate(70deg);
-            left: -15px;
+            left: -25px;
             top: -3px;
-            transform-origin: 50% 100%;
         }
         
         .big-star {
-            left: 75px;
-            top: 50px;
-            transform: rotate(35deg);
+            left: 60px;
+            top: 30px;
+            transform: rotate(35deg) scale(1.2);
         }
         
         .small-star-1 {
-            left: 180px;
-            top: 30px;
-            transform: rotate(35deg) scale(0.6);
+            left: 150px;
+            top: 40px;
+            transform: rotate(35deg) scale(0.8);
         }
         
         .small-star-2 {
-            left: 210px;
-            top: 70px;
-            transform: rotate(35deg) scale(0.6);
+            left: 180px;
+            top: 80px;
+            transform: rotate(35deg) scale(0.8);
         }
         
         .small-star-3 {
-            left: 180px;
-            top: 110px;
-            transform: rotate(35deg) scale(0.6);
+            left: 150px;
+            top: 120px;
+            transform: rotate(35deg) scale(0.8);
         }
         
         .small-star-4 {
-            left: 210px;
-            top: 150px;
-            transform: rotate(35deg) scale(0.6);
+            left: 180px;
+            top: 160px;
+            transform: rotate(35deg) scale(0.8);
         }
     </style>
 </head>
@@ -112,25 +111,11 @@
 <<<<<<< HEAD
             <div class="flex flex-col items-center mb-4">
                 <div class="chinese-flag">
-                    <svg width="450" height="300" viewBox="0 0 450 300" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto max-w-[450px] shadow-lg">
-                        <!-- 红色背景 -->
-                        <rect width="450" height="300" fill="#DE2910"/>
-                        
-                        <!-- 大五角星 -->
-                        <path d="M225,60 L234,90 L264,90 L240,105 L249,135 L225,120 L201,135 L210,105 L186,90 L216,90 Z" fill="#FFDE00"/>
-                        
-                        <!-- 小五角星1 -->
-                        <path d="M330,45 L336,67.5 L358.5,67.5 L342,78.75 L348,101.25 L330,90 L312,101.25 L318,78.75 L301.5,67.5 L324,67.5 Z" fill="#FFDE00"/>
-                        
-                        <!-- 小五角星2 -->
-                        <path d="M360,82.5 L366,105 L388.5,105 L372,116.25 L378,138.75 L360,127.5 L342,138.75 L348,116.25 L331.5,105 L354,105 Z" fill="#FFDE00"/>
-                        
-                        <!-- 小五角星3 -->
-                        <path d="M330,120 L336,142.5 L358.5,142.5 L342,153.75 L348,176.25 L330,165 L312,176.25 L318,153.75 L301.5,142.5 L324,142.5 Z" fill="#FFDE00"/>
-                        
-                        <!-- 小五角星4 -->
-                        <path d="M360,157.5 L366,180 L388.5,180 L372,191.25 L378,213.75 L360,202.5 L342,213.75 L348,191.25 L331.5,180 L354,180 Z" fill="#FFDE00"/>
-                    </svg>
+                    <div class="star big-star"></div>
+                    <div class="star small-star-1"></div>
+                    <div class="star small-star-2"></div>
+                    <div class="star small-star-3"></div>
+                    <div class="star small-star-4"></div>
                 </div>
                 <h2 class="text-6xl md:text-7xl font-bold text-red-600 animate-bounce">你好中国</h2>
             </div>
